@@ -24,7 +24,7 @@ public class CariesGame : MonoBehaviour
         breack = true;
         foreach(var item in caries)
         {
-            if (item.GetComponent<Caries>().destroyed)
+            if (!item.GetComponent<Caries>().destroyed)
             {
                 breack = false;
             }
