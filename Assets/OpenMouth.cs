@@ -21,6 +21,6 @@ public class OpenMouth : MonoBehaviour
     public void Open()
     {
         top.SetBool("tremol", true);
-        top.SetBool("open", true);
+        bot.SetBool("open", true);
     }
 }
