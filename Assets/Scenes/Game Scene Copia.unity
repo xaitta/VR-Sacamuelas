@@ -15546,14 +15546,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528965771}
-  m_LocalRotation: {x: -0.50071526, y: -0.49927008, z: -0.5005745, w: 0.49943843}
+  m_LocalRotation: {x: -0.7071114, y: -0.035716716, z: -0.035828896, w: 0.70529014}
   m_LocalPosition: {x: -2.75, y: 0.94, z: -15.1}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2039633311}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: -89.852, y: 89.396, z: -179.378}
+  m_LocalEulerAnglesHint: {x: -89.855, y: 173.576, z: -179.375}
 --- !u!114 &1528965773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16103,7 +16103,7 @@ MonoBehaviour:
   blackScreen: {fileID: 882549136}
   fadeDuration: 1
   textMeshPro: {fileID: 664908523}
-  countdownTime: 5
+  countdownTime: 300
   startcd: 0
   tictac: {fileID: 1213680606}
 --- !u!1 &1671795611
