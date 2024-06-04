@@ -7,6 +7,10 @@ public class OpenDoor : MonoBehaviour
     public int TeethPlaced = 0;
     [SerializeField]
     UnityEvent OnGameFinish = new UnityEvent();
+    public AudioSource portaobra;
+    public AudioSource portatanca;
+
+    public Animator Anim;
     void Start()
     {
         TeethPlaced = 0;
@@ -17,8 +21,9 @@ public class OpenDoor : MonoBehaviour
         TeethPlaced++;
         if(TeethPlaced == 8)
         {
-            transform.Rotate(new Vector3(0, 90, 0));
             OnGameFinish.Invoke();
+            Anim.SetBool("Open", true);
+            portaobra.Play();
         }
     }
 }
