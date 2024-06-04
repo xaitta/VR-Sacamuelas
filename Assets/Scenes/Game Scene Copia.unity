@@ -16538,7 +16538,7 @@ MonoBehaviour:
   blackScreen: {fileID: 882549136}
   fadeDuration: 1
   textMeshPro: {fileID: 664908523}
-  countdownTime: 5
+  countdownTime: 300
   startcd: 0
   tictac: {fileID: 1213680606}
 --- !u!1 &1671795611
@@ -18333,7 +18333,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.75
+  m_Volume: 0.514
   m_Pitch: 1
   Loop: 0
   Mute: 0
