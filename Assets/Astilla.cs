@@ -6,7 +6,7 @@ public class Astilla : MonoBehaviour
 {
     public Tenazas script;
     private Transform tenazasTransform;
-    private bool isGrabbed = false;
+    public bool isGrabbed = false;
 
     private void Start()
     {
@@ -15,29 +15,31 @@ public class Astilla : MonoBehaviour
 
     private void Update()
     {
-        if (isGrabbed)
+        Debug.Log("aaaaa" + isGrabbed);
+        if (isGrabbed && script.isClosed)
         {
+            Debug.Log("GrabAstilla");
             transform.position = tenazasTransform.position;
+             
             transform.rotation = tenazasTransform.rotation;
+        }
+        else if (!script.isClosed)
+        {
+            isGrabbed = false;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Tenaza"))
         {
-            if (!script.isClosed)
+            if (script.isClosed)
             {
+                Debug.Log("Grab");
                 isGrabbed = true;
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Tenaza"))
-        {
-            isGrabbed = false;
-        }
-    }
+
 }
