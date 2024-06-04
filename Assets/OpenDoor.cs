@@ -13,7 +13,7 @@ public class OpenDoor : MonoBehaviour
     public Animator Anim;
     void Start()
     {
-        TeethPlaced = 0;
+        
     }
 
     public void AddTooth()
