@@ -7,6 +7,9 @@ TagManager:
   - Anchor
   - Hammer
   - Tooth
+  - LeftHand
+  - RightHand
+  - Tenaza
   layers:
   - Default
   - TransparentFX
