@@ -8,6 +8,10 @@ public class OpenMouth : MonoBehaviour
     public Animator top;
     public Animator bot;
     public bool isGameStarted;
+    public AudioSource lever;
+    public AudioSource mouth;
+    public AudioSource growl;
+
     void Start()
     {
         isGameStarted = false;
@@ -24,5 +28,8 @@ public class OpenMouth : MonoBehaviour
         top.SetBool("tremol", true);
         bot.SetBool("open", true);
         isGameStarted = true;
+        lever.Play();
+        mouth.Play();
+        growl.Play();
     }
 }
