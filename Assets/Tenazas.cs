@@ -14,6 +14,7 @@ public class Tenazas : MonoBehaviour
         XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
         grabInteractable.activated.AddListener(x => TrigTenazas());
         grabInteractable.deactivated.AddListener(x => ExitTrigTenazas());
+        anim.Play("Close");
     }
 
     public void TrigTenazas()

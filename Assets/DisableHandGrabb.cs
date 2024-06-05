@@ -89,7 +89,7 @@ public class DisableHandGrabb : MonoBehaviour
         if (args.interactorObject.transform.tag == "LeftHand")
         {
             // Ejecutar acción deseada
-            leftHand.SetActive(false);
+            leftHand.SetActive(true);
         }
         else
         {
@@ -99,7 +99,7 @@ public class DisableHandGrabb : MonoBehaviour
                 if (child.CompareTag("LeftHand"))
                 {
                     // Ejecutar acción deseada
-                    leftHand.SetActive(false);
+                    leftHand.SetActive(true);
                     break; // Salir del bucle si encontramos lo que buscamos
                 }
             }
@@ -107,7 +107,7 @@ public class DisableHandGrabb : MonoBehaviour
         if (args.interactorObject.transform.tag == "RightHand")
         {
             // Ejecutar acción deseada
-            rightHand.SetActive(false);
+            rightHand.SetActive(true);
         }
         else
         {
@@ -117,7 +117,7 @@ public class DisableHandGrabb : MonoBehaviour
                 if (child.CompareTag("RightHand"))
                 {
                     // Ejecutar acción deseada
-                    rightHand.SetActive(false);
+                    rightHand.SetActive(true);
                     break; // Salir del bucle si encontramos lo que buscamos
                 }
             }
