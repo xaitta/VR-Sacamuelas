@@ -16,8 +16,8 @@ public class Caries : MonoBehaviour
         {
             destroyed = true;
             Debug.Log("Machaaaaaka!!!!");
-            gameObject.SetActive(false);
             ponk.Play();
+            gameObject.SetActive(false);
         }
     }
 }
